@@ -1,0 +1,38 @@
+{
+  "name": "sovroute-vercel-ai-guardrail",
+  "version": "1.0.0",
+  "description": "SovRoute x Vercel AI SDK: Zero-Trust Bitcoin Core v31.1 & EVM Pre-Flight Security Guardrail via Streamable HTTP MCP",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "verify": "tsx src/index.ts --verify-mcp"
+  },
+  "keywords": [
+    "vercel-ai-sdk",
+    "ai-sdk",
+    "mcp",
+    "model-context-protocol",
+    "bitcoin",
+    "rbf-guardrail",
+    "mempool",
+    "eip-7702",
+    "security-oracle",
+    "l402"
+  ],
+  "author": "SovRoute <contact@sovroute.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@ai-sdk/openai": "^1.1.0",
+    "ai": "^4.1.0",
+    "dotenv": "^16.4.7",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
